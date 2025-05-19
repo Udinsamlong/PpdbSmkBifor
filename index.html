@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PPDB SMK Bina Informatika Bogor</title>
+  <style>
+    div {
+      border: 2px solid #2e7d32; 
+      border-radius: 8px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    .marquee-container {
+      background: linear-gradient(to right, #00897b, #1976d2);
+      color: white;
+      padding: 10px 0;
+    }
+    .marquee-container marquee {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .navbar-menu {
+      background: linear-gradient(to right, #1976d2, #43a047);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px 0;
+    }
+    .navbar-menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar-menu a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    #beranda img {
+      width: 100px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: #1e88e5;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "✓";
+      margin-right: 10px;
+      color: #4caf50;
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .jurusan-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .jurusan-card {
+      background: #fff;
+      border-left: 5px solid #1e88e5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .jurusan-card h4 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .btn-daftar {
+      display: block;
+      margin: 40px auto 0;
+      padding: 14px 30px;
+      font-size: 18px;
+      background: linear-gradient(to right, #43a047, #1e88e5);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-daftar:hover {
+      background: linear-gradient(to right, #2e7d32, #1565c0);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Teks Berjalan -->
+  <div class="marquee-container">
+    <marquee>Penerimaan Siswa Baru Tahun Ajaran 2025/2026 – Daftar Sekarang untuk Masa Depan Cemerlang!</marquee>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar-menu">
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#program">Program</a>
+    <a href="#kontak">Kontak</a>
+  </div>
+
+  <!-- Beranda -->
+  <section id="beranda" style="border: 2px solid lightgreen; padding: 20px; margin-bottom: 20px;">
+    <img src="logo-bina.jpg" alt="Logo SMK Bina Informatika" />
+    <h1>Pendaftaran PPDB SMK BINA INFORMATIKA</h1>
+    <p style="text-align: center;">Segera daftar untuk masa depan yang lebih cerah bersama kami!</p>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" style="border: 2px solid lightgreen; padding: 20px; margin-bottom: 20px;">
+    <h2>Apa itu SMK Bina Informatika?</h2>
+    <p style="text-align: center;">
+      SMK Bina Informatika adalah sekolah kejuruan di Kota Bogor yang berfokus pada teknologi dan keterampilan kerja.
+    </p>
+    <h3>Alamat</h3>
+    <p style="text-align: center;">Jl. Re. Abdullah No.16 RT.02/RW.01, Pasir Jaya, Bogor Barat</p>
+  </section>
+
+  <!-- Program -->
+  <section id="program" style="border: 2px solid lightgreen; padding: 20px; margin-bottom: 20px;">
+    <h2>Keuntungan Daftar Sekarang:</h2>
+    <ul>
+      <li>Gratis biaya DSP untuk 100 orang pertama</li>
+      <li>SPP hanya Rp250.000/bulan</li>
+      <li>Biaya seragam & LKS sangat terjangkau</li>
+      <li>Ekstrakurikuler: Pramuka, Futsal, Badminton, dan lainnya</li>
+    </ul>
+
+    <h3>Jurusan yang Tersedia</h3>
+    <div class="jurusan-container">
+        
+      <div class="jurusan-card">
+        <h4>💻RPL (Rekayasa Perangkat Lunak)</h4>
+        <p>Mempelajari cara membangun aplikasi dan website profesional.</p>
+      </div>
+      <div class="jurusan-card">
+        <h4>⚙️TKJ (Teknik Komputer & Jaringan)</h4>
+        <p>Belajar jaringan komputer, server, dan perangkat keras.</p>
+      </div>
+      <div class="jurusan-card">
+        <h4>💴PKM (Perbankan & Keuangan Mikro)</h4>
+        <p>Mempelajari dunia perbankan dan sistem keuangan dasar.</p>
+      </div>
+      <div class="jurusan-card">
+        <h4>📊OTKP (Otomatisasi Tata Kelola Perkantoran)</h4>
+        <p>Belajar administrasi modern dan teknologi perkantoran.</p>
+      </div>
+      <div class="jurusan-card">
+        <h4>🎨MM (Multimedia)</h4>
+        <p>Desain grafis, animasi, dan produksi media digital.</p>
+      </div>
+    </div>
+
+    <a class="btn-daftar" href="daftar.html">DAFTAR SEKARANG</a>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p style="text-align: center;">
+      WhatsApp: <a href="https://wa.me/6289617354862" target="_blank">+62 896-1735-4862</a><br/>
+      Email: <a href="mailto:smkbinainformatikakotabogor@gmail.com">smkbinainformatikakotabogor@gmail.com</a><br/>
+      Instagram: <a href="https://instagram.com/smkbinainformatika" target="_blank">@smkbinainformatika</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 FATHAN - SMK BINA INFORMATIKA BOGOR
+  </footer>
+
+</body>
+</html>
